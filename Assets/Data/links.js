@@ -14,5 +14,40 @@ const data = [
             "race": "Hispanic",
             "source": "Twitter"
         }
+    },
+    {
+        "name": "Blonde Boy Brad",
+        "link": "blondeboybrad1",
+        "icon": "1808551429889564672/wqHInngt.jpg",
+        "info": {
+            "preview": ["GTL4jQDbMAAweCM?format=jpg", "GSuxY4DXoAAxRwU?format=jpg"],
+            "kinks": ["Exhibition"],
+            "experience": "Professional",
+            "people": "Solo",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "White",
+            "source": "Twitter"
+        }
     }
+
+    /*
+        {
+            "name": "",
+            "link": "",
+            "icon": "",
+            "info": {
+                "preview": [""],
+                "kinks": [],
+                "experience": "Professional",
+                "people": "Solo",
+                "activity": "Active",
+                "sexuality": "Gay",
+                "body": "Twink",
+                "race": "White",
+                "source": "Twitter"
+            }
+        }
+    */
 ];

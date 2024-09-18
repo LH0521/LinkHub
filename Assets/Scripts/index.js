@@ -29,6 +29,9 @@ loginButton.addEventListener('click', async () => {
 });
 
 const updateUserUI = (user) => {
+    const profileContainer = document.querySelector('.avatar img');
+    const profileName = document.querySelector('.ms-3 span.h6');
+
     if (user) {
         loginButton.innerHTML = '<span><i class="bi bi-person"></i> Logout</span>';
         profileContainer.src = user.photoURL;

@@ -66,7 +66,6 @@ const populateLinkDetails = (profile) => {
     const previewContainer = document.getElementById('profileDetailPreview');
     previewContainer.innerHTML = '';
     preview.forEach(imgUrl => previewContainer.appendChild(createImageElement(imgUrl)));
-
     showOffCanvas('link_canvas');
 };
 
@@ -113,13 +112,14 @@ const updateResults = () => {
     }
 
     if (filters.kinks.length > 0) {
-        filteredData = filteredData.filter(profile => {
-            return filters.kinks.every(selectedKink => profile.info.kinks.includes(selectedKink));
-        });
+        filteredData = filteredData.filter(profile =>
+            filters.kinks.every(selectedKink => profile.info.kinks.includes(selectedKink))
+        );
     }
 
     displayResults(filteredData);
 };
+
 
 
 const displayResults = (profiles) => {
@@ -164,6 +164,7 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', (e) => {
         const filterCategory = e.target.id.includes('twitter') || e.target.id.includes('reddit') ? 'source' : 'kinks';
         toggleFilter(e.target.value, filterCategory, e.target.checked);
+        console.log(`Checkbox ${e.target.value} is ${e.target.checked ? 'checked' : 'unchecked'}`);
         console.log('Filters applied:', filters);
         updateResults();
     });
@@ -171,7 +172,9 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
 
 const toggleFilter = (value, category, isChecked) => {
     if (isChecked) {
-        if (!filters[category].includes(value)) filters[category].push(value);
+        if (!filters[category].includes(value)) {
+            filters[category].push(value);
+        }
     } else {
         filters[category] = filters[category].filter(val => val !== value);
     }

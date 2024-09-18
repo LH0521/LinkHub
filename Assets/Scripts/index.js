@@ -168,14 +168,26 @@ function displayResults(profiles) {
                                 <div class="text-xs text-muted line-clamp-1">@${profile.link}</div>
                             </div>
                             <div class="text-end">
-                                <a href="${profileLink}" target="_blank" class="btn btn-sm btn-neutral rounded-pill">
+                                <!-- Change the "View" link to a button that opens the offcanvas -->
+                                <button type="button" class="btn btn-sm btn-neutral rounded-pill view-button" data-profile-name="${profileIcon}">
                                     <i class="bi bi-folder2-open me-1"></i> View
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>`;
+    });
+
+    document.querySelectorAll('.view-button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const profileName = e.target.getAttribute('data-profile-name');
+            const selectedProfile = profiles.find(profile => profile.name === profileName);
+
+            if (selectedProfile) {
+                populateLinkDetails(selectedProfile);
+            }
+        });
     });
 }
 

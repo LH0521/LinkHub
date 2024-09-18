@@ -112,15 +112,17 @@ const updateResults = () => {
     }
 
     if (filters.kinks.length > 0) {
-        filteredData = filteredData.filter(profile =>
-            filters.kinks.every(selectedKink => profile.info.kinks.includes(selectedKink))
-        );
+        filteredData = filteredData.filter(profile => {
+            const profileKinks = profile.info.kinks;
+            const isMatching = filters.kinks.every(selectedKink => profileKinks.includes(selectedKink));
+            console.log(`Profile: ${profile.name}, Profile Kinks: ${profileKinks}, Matches: ${isMatching}`);
+            return isMatching;
+        });
     }
 
+    console.log(`Filtered Data: ${filteredData.length} profiles found.`);
     displayResults(filteredData);
 };
-
-
 
 const displayResults = (profiles) => {
     const resultsContainer = document.querySelector('.row.g-3.g-xl-5.mt-1');

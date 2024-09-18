@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 const firebaseConfig = {
     apiKey: "AIzaSyCSFoTAOu__S29daond4WDDSaDgPFEuJDs",
     authDomain: "linkhub-cae84.firebaseapp.com",
@@ -148,3 +149,4 @@ function deleteUserRating(linkId) {
         console.error('Error deleting rating: ', error);
     });
 }
+});

@@ -113,13 +113,14 @@ const updateResults = () => {
     }
 
     if (filters.kinks.length > 0) {
-        filteredData = filteredData.filter(profile => 
-            filters.kinks.every(selectedKink => profile.info.kinks.includes(selectedKink))
-        );
+        filteredData = filteredData.filter(profile => {
+            return filters.kinks.every(selectedKink => profile.info.kinks.includes(selectedKink));
+        });
     }
 
     displayResults(filteredData);
 };
+
 
 const displayResults = (profiles) => {
     const resultsContainer = document.querySelector('.row.g-3.g-xl-5.mt-1');
@@ -163,6 +164,7 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', (e) => {
         const filterCategory = e.target.id.includes('twitter') || e.target.id.includes('reddit') ? 'source' : 'kinks';
         toggleFilter(e.target.value, filterCategory, e.target.checked);
+        console.log('Filters applied:', filters);
         updateResults();
     });
 });

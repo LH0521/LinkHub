@@ -139,7 +139,14 @@ const displayResults = (profiles) => {
 };
 
 const createProfileCard = (profile) => {
-    const profileIcon = profile.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${profile.icon}` : `https://preview.redd.it/${profile.icon}`;
+    const profileIcon = profile.info.source === "Twitter" ?
+        `https://pbs.twimg.com/profile_images/${profile.icon}` :
+        `https://preview.redd.it/${profile.icon}`;
+
+    const profileLink = profile.info.source === "Twitter" ?
+        `@${profile.link}` :
+        `u/${profile.link}`;
+
     return `
         <div class="col-lg-4 col-sm-6">
             <div class="card shadow-4-hover">
@@ -150,7 +157,7 @@ const createProfileCard = (profile) => {
                         </div>
                         <div class="flex-1">
                             <span class="d-block font-semibold text-sm text-heading">${profile.name}</span>
-                            <div class="text-xs text-muted line-clamp-1">@${profile.link}</div>
+                            <div class="text-xs text-muted line-clamp-1">${profileLink}</div>
                         </div>
                         <div class="text-end">
                             <button type="button" class="btn btn-sm btn-neutral rounded-pill view-button" data-profile-name="${profile.name}">

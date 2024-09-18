@@ -113,7 +113,9 @@ const updateResults = () => {
     }
 
     if (filters.kinks.length > 0) {
-        filteredData = filteredData.filter(profile => filters.kinks.some(kink => profile.info.kinks.includes(kink)));
+        filteredData = filteredData.filter(profile => 
+            filters.kinks.every(selectedKink => profile.info.kinks.includes(selectedKink))
+        );
     }
 
     displayResults(filteredData);

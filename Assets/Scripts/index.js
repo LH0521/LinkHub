@@ -1,3 +1,4 @@
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCSFoTAOu__S29daond4WDDSaDgPFEuJDs",
     authDomain: "linkhub-cae84.firebaseapp.com",
@@ -9,131 +10,102 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-
 const loginButton = document.getElementById('authButton');
 const profilePic = document.getElementById('profilePic');
 const profileName = document.getElementById('profileName');
+const searchBar = document.getElementById('searchBar');
+const clearFiltersButton = document.getElementById('clearFiltersButton');
+const filters = { source: [], kinks: [] };
 
 loginButton.addEventListener('click', async () => {
-    if (auth.currentUser) {
-        await auth.signOut();
-        updateUserUI(null);
-    } else {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        auth.signInWithPopup(provider).then(result => {
-            const user = result.user;
-            updateUserUI(user);
-        }).catch(console.error);
-    }
+    auth.currentUser ? await auth.signOut() : signIn();
 });
+
+const signIn = async () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try {
+        const result = await auth.signInWithPopup(provider);
+        updateUserUI(result.user);
+    } catch (error) {
+        console.error(error);
+    }
+};
 
 const updateUserUI = (user) => {
     if (user) {
         loginButton.innerHTML = '<span><i class="bi bi-person"></i> Logout</span>';
-        profilePic.src = user.photoURL;
-        profileName.textContent = user.displayName;
+        profilePic.src = user.photoURL || "Assets/Images/logo_1.png";
+        profileName.textContent = user.displayName || "Anonymous";
     } else {
-        loginButton.innerHTML = '<span><i class="bi bi-person"></i> Login</span>';
-        profilePic.src = "Assets/Images/logo_1.png";
-        profileName.textContent = "Anonymous";
+        resetUserUI();
     }
 };
 
-auth.onAuthStateChanged((user) => {
-    updateUserUI(user);
-});
+const resetUserUI = () => {
+    loginButton.innerHTML = '<span><i class="bi bi-person"></i> Login</span>';
+    profilePic.src = "Assets/Images/logo_1.png";
+    profileName.textContent = "Anonymous";
+};
+
+auth.onAuthStateChanged(updateUserUI);
 
 const populateLinkDetails = (profile) => {
-    const linkCanvas = document.querySelector('#link_canvas');
-    const profileImage = document.getElementById('profileDetailPic');
-    const profileName = document.getElementById('profileDetailName');
-    const profileLink = document.getElementById('profileDetailLink');
-    const openButton = document.getElementById('profileDetailOpen');
-    const sexuality = document.getElementById('profileDetailSexuality');
-    const bodyType = document.getElementById('profileDetailBody');
-    const race = document.getElementById('profileDetailRace');
-    const kinksList = document.getElementById('profileDetailKinks');
-    const previewImages = document.getElementById('profileDetailPreview');
-    const profileIcon = profile.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${profile.icon}` : `https://preview.redd.it/${profile.icon}`;
-    const profileUrl = profile.info.source === "Twitter" ? `https://x.com/${profile.link}` : `https://www.reddit.com/user/${profile.link}`;
+    const { name, link, icon, info: { sexuality, body, race, kinks, preview, source } } = profile;
+    const profileIcon = source === "Twitter" ? `https://pbs.twimg.com/profile_images/${icon}` : `https://preview.redd.it/${icon}`;
+    const profileUrl = source === "Twitter" ? `https://x.com/${link}` : `https://www.reddit.com/user/${link}`;
 
-    profileImage.src = profileIcon;
-    profileName.textContent = profile.name;
-    profileLink.textContent = `@${profile.link}`;
-    openButton.href = profileUrl;
-    sexuality.textContent = profile.info.sexuality;
-    bodyType.textContent = profile.info.body;
-    race.textContent = profile.info.race;
-    kinksList.textContent = profile.info.kinks.join(", ");
-    previewImages.innerHTML = '';
+    updateElementContent('profileDetailPic', 'src', profileIcon);
+    updateElementContent('profileDetailName', 'textContent', name);
+    updateElementContent('profileDetailLink', 'textContent', `@${link}`);
+    updateElementContent('profileDetailOpen', 'href', profileUrl);
+    updateElementContent('profileDetailSexuality', 'textContent', sexuality);
+    updateElementContent('profileDetailBody', 'textContent', body);
+    updateElementContent('profileDetailRace', 'textContent', race);
+    updateElementContent('profileDetailKinks', 'textContent', kinks.join(", "));
 
-    profile.info.preview.forEach(imgUrl => {
-        const imgElement = document.createElement('img');
-        imgElement.src = imgUrl;
-        imgElement.classList.add('rounded', 'w-auto', 'h-20');
-        previewImages.appendChild(imgElement);
-    });
+    const previewContainer = document.getElementById('profileDetailPreview');
+    previewContainer.innerHTML = '';
+    preview.forEach(imgUrl => previewContainer.appendChild(createImageElement(imgUrl)));
 
-    const offcanvasElement = new bootstrap.Offcanvas(linkCanvas);
+    showOffCanvas('link_canvas');
+};
+
+const updateElementContent = (id, property, value) => {
+    document.getElementById(id)[property] = value;
+};
+
+const createImageElement = (src) => {
+    const imgElement = document.createElement('img');
+    imgElement.src = src;
+    imgElement.classList.add('rounded', 'w-auto', 'h-20');
+    return imgElement;
+};
+
+const showOffCanvas = (id) => {
+    const offcanvasElement = new bootstrap.Offcanvas(document.getElementById(id));
     offcanvasElement.show();
 };
 
-document.querySelectorAll('.btn-neutral[data-bs-target="#link_canvas"]').forEach(viewButton => {
-    viewButton.addEventListener('click', (e) => {
-        const profileName = e.target.closest('.d-flex').querySelector('.font-semibold').textContent;
-        const selectedProfile = data.find(profile => profile.name === profileName);
-
-        if (selectedProfile) {
-            populateLinkDetails(selectedProfile);
-        }
-    });
-});
-
-const filters = {
-    source: [],
-    kinks: []
-};
-
-document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', (e) => {
-        const filterCategory = e.target.id.includes('twitter') || e.target.id.includes('reddit') ? 'source' : 'kinks';
-
-        if (e.target.checked) {
-            if (!filters[filterCategory].includes(e.target.value)) {
-                filters[filterCategory].push(e.target.value);
-            }
-        } else {
-            filters[filterCategory] = filters[filterCategory].filter(value => value !== e.target.value);
-        }
-        updateResults();
-    });
-});
-
-const clearFiltersButton = document.getElementById('clearFiltersButton');
 clearFiltersButton.addEventListener('click', () => {
     filters.source = [];
     filters.kinks = [];
-
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
-
     updateResults();
 });
 
-const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase();
     searchProfiles(query);
 });
 
-function searchProfiles(query) {
-    const filteredData = data.filter(profile => {
-        return profile.name.toLowerCase().includes(query) || profile.info.kinks.some(kink => kink.toLowerCase().includes(query));
-    });
-
+const searchProfiles = (query) => {
+    const filteredData = data.filter(profile =>
+        profile.name.toLowerCase().includes(query) || profile.info.kinks.some(kink => kink.toLowerCase().includes(query))
+    );
     displayResults(filteredData);
-}
+};
 
-function updateResults() {
+const updateResults = () => {
     let filteredData = data;
 
     if (filters.source.length > 0) {
@@ -145,48 +117,60 @@ function updateResults() {
     }
 
     displayResults(filteredData);
-}
+};
 
-function displayResults(profiles) {
+const displayResults = (profiles) => {
     const resultsContainer = document.querySelector('.row.g-3.g-xl-5.mt-1');
-    resultsContainer.innerHTML = '';
+    resultsContainer.innerHTML = profiles.map(profile => createProfileCard(profile)).join('');
 
-    profiles.forEach(profile => {
-        const profileIcon = profile.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${profile.icon}` : `https://preview.redd.it/${profile.icon}`;
+    resultsContainer.addEventListener('click', (e) => {
+        if (e.target.closest('.view-button')) {
+            const profileName = e.target.closest('.view-button').dataset.profileName;
+            const selectedProfile = profiles.find(profile => profile.name === profileName);
+            if (selectedProfile) populateLinkDetails(selectedProfile);
+        }
+    });
+};
 
-        resultsContainer.innerHTML += `
-            <div class="col-lg-4 col-sm-6">
-                <div class="card shadow-4-hover">
-                    <div class="card-body pb-5">
-                        <div class="d-flex align-items-center">
-                            <div class="me-3">
-                                <img alt="Profile Picture" class="avatar rounded-1" src="${profileIcon}">
-                            </div>
-                            <div class="flex-1">
-                                <span class="d-block font-semibold text-sm text-heading">${profile.name}</span>
-                                <div class="text-xs text-muted line-clamp-1">@${profile.link}</div>
-                            </div>
-                            <div class="text-end">
-                                <button type="button" class="btn btn-sm btn-neutral rounded-pill view-button" data-profile-name="${profile.name}">
-                                    <i class="bi bi-folder2-open me-1"></i> View
-                                </button>
-                            </div>
+const createProfileCard = (profile) => {
+    const profileIcon = profile.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${profile.icon}` : `https://preview.redd.it/${profile.icon}`;
+    return `
+        <div class="col-lg-4 col-sm-6">
+            <div class="card shadow-4-hover">
+                <div class="card-body pb-5">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img alt="Profile Picture" class="avatar rounded-1" src="${profileIcon}">
+                        </div>
+                        <div class="flex-1">
+                            <span class="d-block font-semibold text-sm text-heading">${profile.name}</span>
+                            <div class="text-xs text-muted line-clamp-1">@${profile.link}</div>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-sm btn-neutral rounded-pill view-button" data-profile-name="${profile.name}">
+                                <i class="bi bi-folder2-open me-1"></i> View
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>`;
-    });
+            </div>
+        </div>`;
+};
 
-    document.querySelectorAll('.view-button').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const profileName = e.target.getAttribute('data-profile-name');
-            const selectedProfile = profiles.find(profile => profile.name === profileName);
-
-            if (selectedProfile) {
-                populateLinkDetails(selectedProfile);
-            }
-        });
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', (e) => {
+        const filterCategory = e.target.id.includes('twitter') || e.target.id.includes('reddit') ? 'source' : 'kinks';
+        toggleFilter(e.target.value, filterCategory, e.target.checked);
+        updateResults();
     });
-}
+});
+
+const toggleFilter = (value, category, isChecked) => {
+    if (isChecked) {
+        if (!filters[category].includes(value)) filters[category].push(value);
+    } else {
+        filters[category] = filters[category].filter(val => val !== value);
+    }
+};
 
 displayResults(data);

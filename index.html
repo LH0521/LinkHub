@@ -35,20 +35,14 @@
         <div class="offcanvas-body">
             <div class="row gx-4 mb-4">
                 <div class="col">
-                    <div class="dropdown">
-                        <button class="btn btn-sm btn-neutral rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Sort by
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><button class="dropdown-item" href="#">Sort by: Relevance</button></li>
-                            <li><button class="dropdown-item" href="#">Sort by: Name (A - Z)</button></li>
-                            <li><button class="dropdown-item" href="#">Sort by: Name (Z - A)</button></li>
-                        </ul>
-                    </div>
+                    <select id="sort-by" class="dropdown-menu">
+                        <option value="relevance" class="dropdown-item">Sort by: Relevance</option>
+                        <option value="name-asc" class="dropdown-item">Sort by: Name (A-Z)</option>
+                        <option value="name-desc" class="dropdown-item">Sort by: Name (Z-A)</option>
+                    </select>
                 </div>
                 <div class="col-auto align-self-end">
-                    <button type="button" class="btn btn-sm btn-neutral rounded-pill"><i class="bi bi-x-circle"></i>
+                    <button type="button" class="btn btn-sm btn-neutral rounded-pill" id="clear-filters"><i class="bi bi-x-circle"></i>
                         <span class="d-none d-sm-inline ms-2">Clear Filters</span>
                     </button>
                 </div>

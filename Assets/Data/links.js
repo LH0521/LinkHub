@@ -30,6 +30,22 @@ const data = [
             "race": "White",
             "source": "Twitter"
         }
+    },
+    {
+        "name": "melo",
+        "link": "jmelo699",
+        "icon": "1833250252654026752/yDZhlDdC.jpg",
+        "info": {
+            "preview": ["GTxIqw5WoAAHJJS?format=jpg", "GWbsSJqXwAAM7VI?format=jpg"],
+            "kinks": [],
+            "experience": "Professional",
+            "people": "Solo",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
     }
 
     /*

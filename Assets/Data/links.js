@@ -14,21 +14,5 @@ const data = [
             "race": "Hispanic",
             "source": "Twitter"
         }
-    },
-    {
-        "name": "Jason",
-        "link": "jason1",
-        "icon": "explore-my-musky-scent-its-intoxicating-v0-jiix8w9jfzhd1.jpeg?width=1080&crop=smart&auto=webp&s=7bc8c96c56724e47f2ac98e89634b846269527a8",
-        "info": {
-            "preview": ["https://pbs.twimg.com/media/GXqWMwUXgAApYY_?format=png"],
-            "kinks": ["Feet"],
-            "experience": "Professional",
-            "people": "Solo",
-            "activity": "Active",
-            "sexuality": "Gay",
-            "body": "Twink",
-            "race": "Latino",
-            "source": "Reddit"
-        }
     }
 ];

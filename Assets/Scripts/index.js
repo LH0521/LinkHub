@@ -167,7 +167,8 @@ const createProfileCard = (profile) => {
                     </div>
                 </div>
             </div>
-        </div>`;
+        </div>
+    `;
 };
 
 document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {

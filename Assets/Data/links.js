@@ -46,6 +46,22 @@ const data = [
             "race": "White",
             "source": "Twitter"
         }
+    },
+    {
+        "name": "Leo",
+        "link": "Leobf18",
+        "icon": "1707741001626824705/WulxJjMy.jpg",
+        "info": {
+            "preview": ["FspFvNjX0AAo9CH?format=jpg", "FsT-5DGacAIv84T?format=jpg"],
+            "kinks": [],
+            "experience": "Professional",
+            "people": "Solo",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
     }
 
     /*

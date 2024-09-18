@@ -1,4 +1,3 @@
-// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCSFoTAOu__S29daond4WDDSaDgPFEuJDs",
     authDomain: "linkhub-cae84.firebaseapp.com",

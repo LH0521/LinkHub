@@ -4,7 +4,7 @@ const data = [
         "link": "PvblicBoy",
         "icon": "1819821904653365248/LCaWV3wa.jpg",
         "info": {
-            "preview": ["https://pbs.twimg.com/media/GXqWMwUXgAApYY_?format=png", "https://pbs.twimg.com/media/GPRinQbXUAAOZad?format=png"],
+            "preview": ["GXqWMwUXgAApYY_?format=png", "GPRinQbXUAAOZad?format=png"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
             "people": "Solo",

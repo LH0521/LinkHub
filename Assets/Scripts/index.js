@@ -86,7 +86,7 @@ const updateElementContent = (id, property, value) => {
 const createImageElement = (src) => {
     const imgElement = document.createElement('img');
     imgElement.src = src;
-    imgElement.classList.add('rounded', 'w-auto', 'h-30');
+    imgElement.classList.add('rounded', 'w-auto', 'h-32');
     imgElement.loading = "lazy";
     return imgElement;
 };

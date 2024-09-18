@@ -52,10 +52,11 @@ const populateLinkDetails = (profile) => {
     const { name, link, icon, info: { sexuality, body, race, kinks, preview, source } } = profile;
     const profileIcon = source === "Twitter" ? `https://pbs.twimg.com/profile_images/${icon}` : `https://preview.redd.it/${icon}`;
     const profileUrl = source === "Twitter" ? `https://x.com/${link}` : `https://www.reddit.com/user/${link}`;
+    const profileLinkDisplay = source === "Twitter" ? `@${link}` : `u/${link}`;
 
     updateElementContent('profileDetailPic', 'src', profileIcon);
     updateElementContent('profileDetailName', 'textContent', name);
-    updateElementContent('profileDetailLink', 'textContent', `@${link}`);
+    updateElementContent('profileDetailLink', 'textContent', profileLinkDisplay);
     updateElementContent('profileDetailOpen', 'href', profileUrl);
     updateElementContent('profileDetailSexuality', 'textContent', sexuality);
     updateElementContent('profileDetailBody', 'textContent', body);

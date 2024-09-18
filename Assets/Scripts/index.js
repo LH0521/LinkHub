@@ -53,6 +53,21 @@ const filters = {
     kinks: []
 };
 
+document.querySelectorAll('.form-check-input').forEach(checkbox => {
+    checkbox.addEventListener('change', (e) => {
+        const filterCategory = e.target.id.includes('filter-twitter') || e.target.id.includes('filter-reddit') ? 'source' : 'kinks'; // Determine category
+
+        if (e.target.checked) {
+            if (!filters[filterCategory].includes(e.target.value)) {
+                filters[filterCategory].push(e.target.value);
+            }
+        } else {
+            filters[filterCategory] = filters[filterCategory].filter(value => value !== e.target.value);
+        }
+        updateResults();
+    });
+});
+
 const populateLinkDetails = (profile) => {
     const linkCanvas = document.querySelector('#link_canvas');
     const linkCanvasLabel = document.querySelector('#link_canvas_label');
@@ -111,7 +126,7 @@ const updateResults = () => {
     filteredData.forEach(item => {
         const profileIcon = item.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${item.icon}` : `https://preview.redd.it/${item.icon}`;
         const profileLink = item.info.source === "Twitter" ? `https://x.com/${item.link}` : `https://www.reddit.com/user/${item.link}`;
-        
+
         resultContainer.innerHTML += `
             <div class="col-lg-4 col-sm-6">
                 <div class="card shadow-4-hover">
@@ -147,18 +162,6 @@ const updateResults = () => {
         });
     });
 };
-
-document.querySelectorAll('.form-check-input').forEach(checkbox => {
-    checkbox.addEventListener('change', (e) => {
-        const filterCategory = e.target.id.startsWith('filter-') ? e.target.value : '';
-        if (e.target.checked) {
-            filters[filterCategory].push(e.target.value);
-        } else {
-            filters[filterCategory] = filters[filterCategory].filter(f => f !== e.target.value);
-        }
-        updateResults();
-    });
-});
 
 document.querySelector('.btn-clear-filters').addEventListener('click', () => {
     filters.source = [];

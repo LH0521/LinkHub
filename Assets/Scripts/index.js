@@ -49,10 +49,10 @@ const resetUserUI = () => {
 auth.onAuthStateChanged(updateUserUI);
 
 const populateLinkDetails = (profile) => {
-    const { name, link, icon, info: { sexuality, body, race, kinks, sports, preview, source } } = profile;
+    const { name, link, icon, info: { sexuality, body, race, kinks, preview, source } } = profile;
     const profileIcon = source === "Twitter" ? `https://pbs.twimg.com/profile_images/${icon}` : `https://preview.redd.it/${icon}`;
     const profileUrl = source === "Twitter" ? `https://x.com/${link}` : `https://www.reddit.com/user/${link}`;
-    const profileLinkDisplay = source === "Twitter" ? `@${link}` : `u/${link}`;
+    const profileLinkDisplay = formatProfileLink(source, link);
 
     updateElementContent('profileDetailPic', 'src', profileIcon);
     updateElementContent('profileDetailName', 'textContent', name);
@@ -62,11 +62,16 @@ const populateLinkDetails = (profile) => {
     updateElementContent('profileDetailBody', 'textContent', body);
     updateElementContent('profileDetailRace', 'textContent', race);
     updateElementContent('profileDetailKinks', 'textContent', kinks.join(", "));
-    updateElementContent('profileDetailSports', 'textContent', sports.join(", "));
 
     const previewContainer = document.getElementById('profileDetailPreview');
     previewContainer.innerHTML = '';
-    preview.forEach(imgUrl => previewContainer.appendChild(createImageElement(imgUrl)));
+    const basePreviewUrl = source === "Twitter" ? "https://pbs.twimg.com/media/" : "https://preview.redd.it/";
+    
+    preview.forEach(imgUrl => {
+        const fullImgUrl = `${basePreviewUrl}${imgUrl}`;
+        previewContainer.appendChild(createImageElement(fullImgUrl));
+    });
+
     showOffCanvas('link_canvas');
 };
 
@@ -78,6 +83,7 @@ const createImageElement = (src) => {
     const imgElement = document.createElement('img');
     imgElement.src = src;
     imgElement.classList.add('rounded', 'w-auto', 'h-20');
+    imgElement.loading = "lazy";
     return imgElement;
 };
 

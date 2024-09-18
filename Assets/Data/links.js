@@ -62,6 +62,22 @@ const data = [
             "race": "White",
             "source": "Twitter"
         }
+    },
+    {
+        "name": "AlexStraightBoy",
+        "link": "seattle_boi",
+        "icon": "1829151408865579008/vpXDRJ1q.jpg",
+        "info": {
+            "preview": ["GUMdj6FXcAA0FWD?format=jpg", "GXFA6WGWYAArT38?format=jpg"],
+            "kinks": ["Exhibition"],
+            "experience": "Professional",
+            "people": "Solo",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Jock",
+            "race": "White",
+            "source": "Twitter"
+        }
     }
 
     /*

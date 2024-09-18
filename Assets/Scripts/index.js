@@ -153,7 +153,6 @@ function displayResults(profiles) {
 
     profiles.forEach(profile => {
         const profileIcon = profile.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${profile.icon}` : `https://preview.redd.it/${profile.icon}`;
-        const profileLink = profile.info.source === "Twitter" ? `https://x.com/${profile.link}` : `https://www.reddit.com/user/${profile.link}`;
 
         resultsContainer.innerHTML += `
             <div class="col-lg-4 col-sm-6">
@@ -168,8 +167,7 @@ function displayResults(profiles) {
                                 <div class="text-xs text-muted line-clamp-1">@${profile.link}</div>
                             </div>
                             <div class="text-end">
-                                <!-- Change the "View" link to a button that opens the offcanvas -->
-                                <button type="button" class="btn btn-sm btn-neutral rounded-pill view-button" data-profile-name="${profileIcon}">
+                                <button type="button" class="btn btn-sm btn-neutral rounded-pill view-button" data-profile-name="${profile.name}">
                                     <i class="bi bi-folder2-open me-1"></i> View
                                 </button>
                             </div>

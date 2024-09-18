@@ -49,7 +49,7 @@ const resetUserUI = () => {
 auth.onAuthStateChanged(updateUserUI);
 
 const populateLinkDetails = (profile) => {
-    const { name, link, icon, info: { sexuality, body, race, kinks, preview, source } } = profile;
+    const { name, link, icon, info: { sexuality, body, race, kinks, sports, preview, source } } = profile;
     const profileIcon = source === "Twitter" ? `https://pbs.twimg.com/profile_images/${icon}` : `https://preview.redd.it/${icon}`;
     const profileUrl = source === "Twitter" ? `https://x.com/${link}` : `https://www.reddit.com/user/${link}`;
     const profileLinkDisplay = source === "Twitter" ? `@${link}` : `u/${link}`;
@@ -62,6 +62,7 @@ const populateLinkDetails = (profile) => {
     updateElementContent('profileDetailBody', 'textContent', body);
     updateElementContent('profileDetailRace', 'textContent', race);
     updateElementContent('profileDetailKinks', 'textContent', kinks.join(", "));
+    updateElementContent('profileDetailSports', 'textContent', sports.join(", "));
 
     const previewContainer = document.getElementById('profileDetailPreview');
     previewContainer.innerHTML = '';

@@ -113,8 +113,8 @@ const updateResults = () => {
 
     if (filters.kinks.length > 0) {
         filteredData = filteredData.filter(profile => {
-            const profileKinks = profile.info.kinks;
-            const isMatching = filters.kinks.every(selectedKink => profileKinks.includes(selectedKink));
+            const profileKinks = profile.info.kinks.map(kink => kink.toLowerCase().trim());
+            const isMatching = filters.kinks.every(selectedKink => profileKinks.includes(selectedKink.toLowerCase().trim()));
             console.log(`Profile: ${profile.name}, Profile Kinks: ${profileKinks}, Matches: ${isMatching}`);
             return isMatching;
         });
@@ -123,6 +123,7 @@ const updateResults = () => {
     console.log(`Filtered Data: ${filteredData.length} profiles found.`);
     displayResults(filteredData);
 };
+
 
 const displayResults = (profiles) => {
     const resultsContainer = document.querySelector('.row.g-3.g-xl-5.mt-1');

@@ -111,7 +111,7 @@
     <div class="offcanvas offcanvas-end w-full w-lg-1/3" tabindex="-1" id="link_canvas"
         aria-labelledby="link_canvas_label">
         <div class="offcanvas-header border-bottom py-5 bg-surface-secondary">
-            <h5>Details</h5>
+            <h5 id="link_canvas_label">[Name]'s Details</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -121,15 +121,16 @@
                         <div class="col">
                             <div class="d-flex align-items-center">
                                 <div class="me-3">
-                                    <img alt="Profile Picture" class="avatar rounded-1" src="" />
+                                    <img alt="Profile Picture" class="avatar rounded-1" id="profileDetailPic" src="" />
                                 </div>
                                 <div class="flex-1">
-                                    <a href="#"
+                                    <a href="#" id="profileDetailName"
                                         class="d-block font-semibold text-sm text-heading text-primary-hover"></a>
-                                    <div class="text-xs text-muted line-clamp-1"></div>
+                                    <div class="text-xs text-muted line-clamp-1" id="profileDetailLink"></div>
                                 </div>
                                 <div class="text-end">
-                                    <a href="#" target="_blank" class="btn btn-sm btn-neutral rounded-pill">
+                                    <a href="#" target="_blank" id="profileDetailOpen"
+                                        class="btn btn-sm btn-neutral rounded-pill">
                                         <i class="bi bi-caret-right me-1"></i>
                                         <span>Open</span>
                                     </a>
@@ -139,15 +140,15 @@
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-4">
                                     <span class="d-block h6 text-heading mb-0">Sexuality</span>
-                                    <span class="d-block text-sm text-muted">Sexuality</span>
+                                    <span class="d-block text-sm text-muted" id="profileDetailSexuality"></span>
                                 </div>
                                 <div class="col-4">
                                     <span class="d-block h6 text-heading mb-0">Body</span>
-                                    <span class="d-block text-sm text-muted">Body</span>
+                                    <span class="d-block text-sm text-muted" id="profileDetailBody"></span>
                                 </div>
                                 <div class="col-4">
                                     <span class="d-block h6 text-heading mb-0">Race</span>
-                                    <span class="d-block text-sm text-muted">Race</span>
+                                    <span class="d-block text-sm text-muted" id="profileDetailRace"></span>
                                 </div>
                             </div>
                         </div>
@@ -158,14 +159,14 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <span class="d-block h6 text-heading mb-0">Kinks</span>
-                    <span class="d-block text-sm text-muted"></span>
+                    <span class="d-block text-sm text-muted" id="profileDetailKinks"></span>
                 </div>
             </div>
 
             <div class="card mb-3">
                 <div class="card-body">
                     <span class="d-block h6 text-heading mb-0">Preview</span>
-                    <div class="mt-2 d-flex gap-2 scrollable-x">
+                    <div class="mt-2 d-flex gap-2 scrollable-x" id="profileDetailPreview">
                     </div>
                 </div>
             </div>
@@ -218,7 +219,8 @@
                         <div class="d-flex flex-column flex-sm-row justify-content-between gap-3">
                             <div class="input-group input-group-sm input-group-inline">
                                 <span class="input-group-text pe-2"><i class="bi bi-search"></i></span>
-                                <input type="text" class="form-control" placeholder="Search" aria-label="Search" id="searchBar">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                    id="searchBar">
                             </div>
                         </div>
                         <div class="row g-3 g-xl-5 mt-1">

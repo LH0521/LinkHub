@@ -43,6 +43,52 @@ auth.onAuthStateChanged((user) => {
     updateUserUI(user);
 });
 
+const populateLinkDetails = (profile) => {
+    const linkCanvas = document.querySelector('#link_canvas');
+    const profileImage = document.getElementById('profileDetailPic');
+    const profileName = document.getElementById('profileDetailName');
+    const profileLink = document.getElementById('profileDetailLink');
+    const openButton = document.getElementById('profileDetailOpen');
+    const sexuality = document.getElementById('profileDetailSexuality');
+    const bodyType = document.getElementById('profileDetailBody');
+    const race = document.getElementById('profileDetailRace');
+    const kinksList = document.getElementById('profileDetailKinks');
+    const previewImages = document.getElementById('profileDetailPreview');
+    const profileIcon = profile.info.source === "Twitter" ? `https://pbs.twimg.com/profile_images/${profile.icon}` : `https://preview.redd.it/${profile.icon}`;
+    const profileUrl = profile.info.source === "Twitter" ? `https://x.com/${profile.link}` : `https://www.reddit.com/user/${profile.link}`;
+
+    profileImage.src = profileIcon;
+    profileName.textContent = profile.name;
+    profileLink.textContent = `@${profile.link}`;
+    openButton.href = profileUrl;
+    sexuality.textContent = profile.info.sexuality;
+    bodyType.textContent = profile.info.body;
+    race.textContent = profile.info.race;
+    kinksList.textContent = profile.info.kinks.join(", ");
+    previewImages.innerHTML = '';
+
+    profile.info.preview.forEach(imgUrl => {
+        const imgElement = document.createElement('img');
+        imgElement.src = imgUrl;
+        imgElement.classList.add('rounded', 'w-auto', 'h-20');
+        previewImages.appendChild(imgElement);
+    });
+
+    const offcanvasElement = new bootstrap.Offcanvas(linkCanvas);
+    offcanvasElement.show();
+};
+
+document.querySelectorAll('.btn-neutral[data-bs-target="#link_canvas"]').forEach(viewButton => {
+    viewButton.addEventListener('click', (e) => {
+        const profileName = e.target.closest('.d-flex').querySelector('.font-semibold').textContent;
+        const selectedProfile = data.find(profile => profile.name === profileName);
+
+        if (selectedProfile) {
+            populateLinkDetails(selectedProfile);
+        }
+    });
+});
+
 const filters = {
     source: [],
     kinks: []

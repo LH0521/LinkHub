@@ -48,6 +48,10 @@ const resetUserUI = () => {
 
 auth.onAuthStateChanged(updateUserUI);
 
+const formatProfileLink = (source, link) => {
+    return source === "Twitter" ? `@${link}` : `u/${link}`;
+};
+
 const populateLinkDetails = (profile) => {
     const { name, link, icon, info: { sexuality, body, race, kinks, preview, source } } = profile;
     const profileIcon = source === "Twitter" ? `https://pbs.twimg.com/profile_images/${icon}` : `https://preview.redd.it/${icon}`;

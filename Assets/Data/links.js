@@ -73,6 +73,21 @@ const data = [
             "race": "White",
             "source": "Twitter"
         }
+    },
+    {
+        "name": "German Gayboy",
+        "link": "german1gay",
+        "icon": "1809948150116786177/K3fFUp7z.jpg",
+        "info": {
+            "preview": ["GU4FAuyXoAMPVc7?format=jpg", "GXvK9twXwAAX8aY?format=jpg"],
+            "kinks": ["Exhibition"],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
     }
 
     /*
@@ -84,7 +99,6 @@ const data = [
                 "preview": [""],
                 "kinks": [],
                 "experience": "Professional",
-                "people": "Solo",
                 "activity": "Active",
                 "sexuality": "Gay",
                 "body": "Twink",

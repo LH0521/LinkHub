@@ -19,7 +19,7 @@ const elements = {
     previewContainer: document.getElementById('profileDetailPreview'),
 };
 
-let filters = { source: [], kinks: [] };
+let filters = { source: [], kinks: [], race: [], body: [], experience: [], sexuality: [], activity: [] };
 
 elements.loginButton.addEventListener('click', async () => {
     auth.currentUser ? await auth.signOut() : signIn();
@@ -63,10 +63,29 @@ const toggleFilter = (value, category, isChecked) => {
 };
 
 const resetFilters = () => {
+    filters = { source: [], kinks: [], race: [], body: [], experience: [], sexuality: [], activity: [] };
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
 };
 
-const getFilterCategory = (element) => element.id.includes('twitter') || element.id.includes('reddit') ? 'source' : 'kinks';
+
+const getFilterCategory = (element) => {
+    if (element.id.includes('twitter') || element.id.includes('reddit')) {
+        return 'source';
+    } else if (element.id.includes('white') || element.id.includes('black') || element.id.includes('hispanic') || element.id.includes('asian')) {
+        return 'race';
+    } else if (element.id.includes('twink') || element.id.includes('twunk') || element.id.includes('jock')) {
+        return 'body';
+    } else if (element.id.includes('professional') || element.id.includes('amateur')) {
+        return 'experience';
+    } else if (element.id.includes('straight') || element.id.includes('gay') || element.id.includes('lesbian')) {
+        return 'sexuality';
+    } else if (element.id.includes('active') || element.id.includes('semiactive') || element.id.includes('inactive')) {
+        return 'activity';
+    } else {
+        return 'kinks';
+    }
+};
+
 
 const searchProfiles = (query) => {
     const filteredData = data.filter(profile =>
@@ -76,12 +95,18 @@ const searchProfiles = (query) => {
 };
 
 const updateResults = () => {
-    const filteredData = data.filter(profile =>
+    const filteredData = data.filter(profile => 
         (filters.source.length === 0 || filters.source.includes(profile.info.source.toLowerCase())) &&
+        (filters.race.length === 0 || filters.race.includes(profile.info.race.toLowerCase())) &&
+        (filters.body.length === 0 || filters.body.includes(profile.info.body.toLowerCase())) &&
+        (filters.experience.length === 0 || filters.experience.includes(profile.info.experience.toLowerCase())) &&
+        (filters.sexuality.length === 0 || filters.sexuality.includes(profile.info.sexuality.toLowerCase())) &&
+        (filters.activity.length === 0 || filters.activity.includes(profile.info.activity.toLowerCase())) &&
         (filters.kinks.length === 0 || profile.info.kinks.some(kink => filters.kinks.includes(kink.toLowerCase())))
     );
     displayResults(filteredData);
 };
+
 
 const displayResults = (profiles) => {
     elements.resultsContainer.innerHTML = profiles.map(createProfileCard).join('');

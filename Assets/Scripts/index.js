@@ -25,6 +25,22 @@ elements.loginButton.addEventListener('click', async () => {
     auth.currentUser ? await auth.signOut() : signIn();
 });
 
+const signIn = async () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try {
+        const result = await auth.signInWithPopup(provider);
+        updateUserUI(result.user);
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+function updateUserUI(user) {
+    elements.loginButton.innerHTML = user ? '<span><i class="bi bi-person"></i> Logout</span>' : '<span><i class="bi bi-person"></i> Login</span>';
+    elements.profilePic.src = user?.photoURL || "Assets/Images/logo_1.png";
+    elements.profileName.textContent = user?.displayName || "Anonymous";
+}
+
 auth.onAuthStateChanged(updateUserUI);
 
 elements.clearFiltersButton.addEventListener('click', () => {
@@ -41,27 +57,16 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', (e) => toggleFilter(e.target.value, getFilterCategory(e.target), e.target.checked));
 });
 
-const signIn = async () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    try {
-        const result = await auth.signInWithPopup(provider);
-        updateUserUI(result.user);
-    } catch (error) {
-        console.error(error);
-    }
+const toggleFilter = (value, category, isChecked) => {
+    filters[category] = isChecked ? [...filters[category], value] : filters[category].filter(val => val !== value);
+    updateResults();
 };
-
-const updateUserUI = (user) => {
-    elements.loginButton.innerHTML = user ? '<span><i class="bi bi-person"></i> Logout</span>' : '<span><i class="bi bi-person"></i> Login</span>';
-    elements.profilePic.src = user?.photoURL || "Assets/Images/logo_1.png";
-    elements.profileName.textContent = user?.displayName || "Anonymous";
-};
-
-const getFilterCategory = (element) => element.id.includes('twitter') || element.id.includes('reddit') ? 'source' : 'kinks';
 
 const resetFilters = () => {
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
 };
+
+const getFilterCategory = (element) => element.id.includes('twitter') || element.id.includes('reddit') ? 'source' : 'kinks';
 
 const searchProfiles = (query) => {
     const filteredData = data.filter(profile =>
@@ -76,11 +81,6 @@ const updateResults = () => {
         (filters.kinks.length === 0 || profile.info.kinks.some(kink => filters.kinks.includes(kink.toLowerCase())))
     );
     displayResults(filteredData);
-};
-
-const toggleFilter = (value, category, isChecked) => {
-    filters[category] = isChecked ? [...filters[category], value] : filters[category].filter(val => val !== value);
-    updateResults();
 };
 
 const displayResults = (profiles) => {

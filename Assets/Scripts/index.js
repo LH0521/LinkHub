@@ -135,7 +135,13 @@ const populateLinkDetails = ({ name, link, icon, info }) => {
     updateElementContent('profileDetailRace', 'textContent', race);
     updateElementContent('profileDetailKinks', 'textContent', kinks.join(", "));
 
-    elements.previewContainer.innerHTML = preview.map(imgUrl => createImageElement(getPreviewUrl(source, imgUrl))).join('');
+    elements.previewContainer.innerHTML = '';
+
+    preview.forEach(imgUrl => {
+        const fullImgUrl = getPreviewUrl(source, imgUrl);
+        elements.previewContainer.appendChild(createImageElement(fullImgUrl));
+    });
+
     showOffCanvas('link_canvas');
 };
 

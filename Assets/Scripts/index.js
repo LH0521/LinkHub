@@ -104,12 +104,14 @@ const updateResults = () => {
         (filters.activity.length === 0 || filters.activity.includes(profile.info.activity.toLowerCase())) &&
         (filters.kinks.length === 0 || profile.info.kinks.some(kink => filters.kinks.includes(kink.toLowerCase())))
     );
-    displayResults(filteredData);
+    displayResults(filteredData, data.length);
 };
 
 
-const displayResults = (profiles) => {
+
+const displayResults = (profiles, totalProfiles) => {
     elements.resultsContainer.innerHTML = profiles.map(createProfileCard).join('');
+    document.getElementById('resultCount').textContent = `Showing ${profiles.length} of ${totalProfiles} results`;
     elements.resultsContainer.addEventListener('click', handleProfileClick(profiles));
 };
 

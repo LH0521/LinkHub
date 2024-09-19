@@ -88,6 +88,36 @@ const data = [
             "race": "White",
             "source": "Twitter"
         }
+    },
+    {
+        "name": "Dirty Fox Paws",
+        "link": "foxwaterr",
+        "icon": "1576809288529580034/96KlR-hc.jpg",
+        "info": {
+            "preview": ["F0d_sxdWYAA0qLQ?format=jpg", "Fxt1fO1WYAA3WHn?format=jpg"],
+            "kinks": ["Furry"],
+            "experience": "Amateur",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Pup Maestro",
+        "link": "pianotwink",
+        "icon": "1823779465895272448/hLSjMIzw.jpg",
+        "info": {
+            "preview": ["GT58WnrW4AA7EDF?format=jpg", "GTgZ2HwWoAAIGgO?format=jpg"],
+            "kinks": ["Pups"],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
     }
 
     /*
@@ -96,7 +126,7 @@ const data = [
             "link": "",
             "icon": "",
             "info": {
-                "preview": [""],
+                "preview": ["", ""],
                 "kinks": [],
                 "experience": "Professional",
                 "activity": "Active",

@@ -99,7 +99,7 @@ const data = [
             "experience": "Amateur",
             "activity": "Active",
             "sexuality": "Gay",
-            "body": "Twink",
+            "body": "Twunk",
             "race": "White",
             "source": "Twitter"
         }
@@ -115,6 +115,51 @@ const data = [
             "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Manu",
+        "link": "manutwinkx",
+        "icon": "1620896802294702091/uyBqkGH4.jpg",
+        "info": {
+            "preview": ["F-bA0dDaUAAdzJ9?format=jpg", "Fq8uZ3vXoAAjjNm?format=jpg"],
+            "kinks": [],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "mxgearpup-leon",
+        "link": "LeonMxgear",
+        "icon": "1772707047076716544/u0EXiVuB.jpg",
+        "info": {
+            "preview": ["GQR8qlSXAAAnyh0?format=jpg", "FZrSVcpWIAUBOL-?format=jpg"],
+            "kinks": ["Pups", "Latex", "MXGear"],
+            "experience": "Professional",
+            "activity": "Semiactive",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Pup H",
+        "link": "hornypupxxx",
+        "icon": "1698424464772366336/x5BPCNIk.jpg",
+        "info": {
+            "preview": ["GWnreOeXAAA4a3r?format=jpg", "GVk9tBgXkAA1MEX?format=jpg"],
+            "kinks": ["Pups"],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twunk",
             "race": "White",
             "source": "Twitter"
         }

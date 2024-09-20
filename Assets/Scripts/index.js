@@ -21,26 +21,6 @@ const elements = {
 
 let filters = { source: [], kinks: [], race: [], body: [], experience: [], sexuality: [], activity: [] };
 
-const filterMap = {
-    twitter: 'source',
-    reddit: 'source',
-    white: 'race',
-    black: 'race',
-    hispanic: 'race',
-    asian: 'race',
-    twink: 'body',
-    twunk: 'body',
-    jock: 'body',
-    professional: 'experience',
-    amateur: 'experience',
-    straight: 'sexuality',
-    gay: 'sexuality',
-    lesbian: 'sexuality',
-    active: 'activity',
-    semiactive: 'activity',
-    inactive: 'activity',
-};
-
 elements.loginButton.addEventListener('click', async () => {
     auth.currentUser ? await auth.signOut() : signIn();
 });
@@ -64,6 +44,7 @@ function updateUserUI(user) {
 auth.onAuthStateChanged(updateUserUI);
 
 elements.clearFiltersButton.addEventListener('click', () => {
+    filters = { source: [], kinks: [] };
     resetFilters();
     updateResults();
 });
@@ -77,8 +58,6 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
 });
 
 const toggleFilter = (value, category, isChecked) => {
-    if (!category || !filters[category]) return;
-
     filters[category] = isChecked ? [...filters[category], value] : filters[category].filter(val => val !== value);
     updateResults();
 };
@@ -88,9 +67,23 @@ const resetFilters = () => {
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);
 };
 
+
 const getFilterCategory = (element) => {
-    const filterId = element.id.split('_')[0];
-    return filterMap[filterId] || null;
+    if (element.id.includes('twitter') || element.id.includes('reddit')) {
+        return 'source';
+    } else if (element.id.includes('white') || element.id.includes('black') || element.id.includes('hispanic') || element.id.includes('asian')) {
+        return 'race';
+    } else if (element.id.includes('twink') || element.id.includes('twunk') || element.id.includes('jock')) {
+        return 'body';
+    } else if (element.id.includes('professional') || element.id.includes('amateur')) {
+        return 'experience';
+    } else if (element.id.includes('straight') || element.id.includes('gay') || element.id.includes('lesbian')) {
+        return 'sexuality';
+    } else if (element.id.includes('active') || element.id.includes('semiactive') || element.id.includes('inactive')) {
+        return 'activity';
+    } else {
+        return 'kinks';
+    }
 };
 
 
@@ -101,29 +94,29 @@ const searchProfiles = (query) => {
     displayResults(filteredData);
 };
 
-const applyFilter = (profile, category, filterValues) => {
-    if (filterValues.length === 0) return true;
-    const profileValue = profile.info[category]?.toLowerCase();
-    if (!profileValue) return false;
-
-    if (category === 'kinks') {
-        return profile.info.kinks.some(kink => filterValues.includes(kink.toLowerCase()));
-    }
-
-    return filterValues.includes(profileValue);
-};
-
 const updateResults = () => {
-    const filteredData = data.filter(profile =>
-        applyFilter(profile, 'source', filters.source) &&
-        applyFilter(profile, 'race', filters.race) &&
-        applyFilter(profile, 'body', filters.body) &&
-        applyFilter(profile, 'experience', filters.experience) &&
-        applyFilter(profile, 'sexuality', filters.sexuality) &&
-        applyFilter(profile, 'activity', filters.activity) &&
-        applyFilter(profile, 'kinks', filters.kinks)
+    const filteredData = data.filter(profile => 
+        (filters.source.length === 0 || filters.source.includes(profile.info.source.toLowerCase())) &&
+        (filters.race.length === 0 || filters.race.includes(profile.info.race.toLowerCase())) &&
+        (filters.body.length === 0 || filters.body.includes(profile.info.body.toLowerCase())) &&
+        (filters.experience.length === 0 || filters.experience.includes(profile.info.experience.toLowerCase())) &&
+        (filters.sexuality.length === 0 || filters.sexuality.includes(profile.info.sexuality.toLowerCase())) &&
+        (filters.activity.length === 0 || filters.activity.includes(profile.info.activity.toLowerCase())) &&
+        (filters.kinks.length === 0 || profile.info.kinks.some(kink => filters.kinks.includes(kink.toLowerCase())))
     );
     displayResults(filteredData);
+};
+
+const getActiveFilters = () => {
+    const activeFilters = [];
+
+    for (const [category, values] of Object.entries(filters)) {
+        if (values.length > 0) {
+            activeFilters.push(...values);
+        }
+    }
+
+    return activeFilters;
 };
 
 const displayResults = (profiles) => {
@@ -134,14 +127,11 @@ const displayResults = (profiles) => {
     elements.resultsContainer.addEventListener('click', handleProfileClick(profiles));
 };
 
-const getActiveFilters = () => {
-    const activeFilters = [];
-    for (const [category, values] of Object.entries(filters)) {
-        if (values.length > 0) {
-            activeFilters.push(...values);
-        }
-    }
-    return activeFilters;
+const handleProfileClick = (profiles) => (e) => {
+    const viewButton = e.target.closest('.view-button');
+    if (!viewButton) return;
+    const selectedProfile = profiles.find(profile => profile.name === viewButton.dataset.profileName);
+    if (selectedProfile) populateLinkDetails(selectedProfile);
 };
 
 const createProfileCard = (profile) => {
@@ -167,13 +157,6 @@ const createProfileCard = (profile) => {
             </div>
         </div>
     `;
-};
-
-const handleProfileClick = (profiles) => (e) => {
-    const viewButton = e.target.closest('.view-button');
-    if (!viewButton) return;
-    const selectedProfile = profiles.find(profile => profile.name === viewButton.dataset.profileName);
-    if (selectedProfile) populateLinkDetails(selectedProfile);
 };
 
 const populateLinkDetails = ({ name, link, icon, info }) => {
@@ -205,7 +188,11 @@ const getProfileIcon = (source, icon) => source === "Twitter" ? `https://pbs.twi
 const getProfileUrl = (source, link) => source === "Twitter" ? `https://x.com/${link}` : `https://www.reddit.com/user/${link}`;
 const formatProfileLink = (source, link) => source === "Twitter" ? `@${link}` : `u/${link}`;
 const getPreviewUrl = (source, imgUrl) => source === "Twitter" ? `https://pbs.twimg.com/media/${imgUrl}` : `https://preview.redd.it/${imgUrl}`;
-const updateElementContent = (id, property, value) => document.getElementById(id)[property] = value;
+
+const updateElementContent = (id, property, value) => {
+    document.getElementById(id)[property] = value;
+};
+
 const createImageElement = (src) => {
     const imgElement = document.createElement('img');
     imgElement.src = src;
@@ -213,6 +200,7 @@ const createImageElement = (src) => {
     imgElement.loading = "lazy";
     return imgElement;
 };
+
 const showOffCanvas = (id) => {
     const offcanvasElement = new bootstrap.Offcanvas(document.getElementById(id));
     offcanvasElement.show();

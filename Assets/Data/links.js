@@ -30,6 +30,21 @@ const data = [
         }
     },
     {
+        "name": "danny",
+        "link": "dannydelanox",
+        "icon": "1671963209421537281/oNjhsH07.jpg",
+        "info": {
+            "preview": ["FLq_CZLXoAEwNHM?format=jpg", "FRWKBPiXsAIUF_y?format=jpg"],
+            "kinks": ["Exhibition"],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    }
+    {
         "name": "ExhibBoy",
         "link": "PvblicBoy",
         "icon": "1819821904653365248/LCaWV3wa.jpg",

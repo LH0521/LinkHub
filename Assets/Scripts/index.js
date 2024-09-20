@@ -77,6 +77,8 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
 });
 
 const toggleFilter = (value, category, isChecked) => {
+    if (!category || !filters[category]) return;
+
     filters[category] = isChecked ? [...filters[category], value] : filters[category].filter(val => val !== value);
     updateResults();
 };
@@ -87,8 +89,10 @@ const resetFilters = () => {
 };
 
 const getFilterCategory = (element) => {
-    return Object.keys(filterMap).find(key => element.id.includes(key)) ? filterMap[element.id.split('_')[0]] : 'kinks';
+    const filterId = element.id.split('_')[0];
+    return filterMap[filterId] || null;
 };
+
 
 const searchProfiles = (query) => {
     const filteredData = data.filter(profile =>

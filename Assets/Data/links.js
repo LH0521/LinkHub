@@ -45,6 +45,21 @@ const data = [
         }
     },
     {
+        "name": "char 🐸",
+        "link": "CharTwinkk",
+        "icon": "1759498677964406784/FPeLLQ2I.jpg",
+        "info": {
+            "preview": ["GXc0etwXAAAdvQd?format=jpg", "GTbd2XpXcAA3VIA?format=jpg"],
+            "kinks": [],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "ExhibBoy",
         "link": "PvblicBoy",
         "icon": "1819821904653365248/LCaWV3wa.jpg",

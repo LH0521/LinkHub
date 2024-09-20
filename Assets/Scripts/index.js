@@ -95,8 +95,6 @@ const searchProfiles = (query) => {
 };
 
 const updateResults = () => {
-    const totalProfiles = data.length;
-
     const filteredData = data.filter(profile => 
         (filters.source.length === 0 || filters.source.includes(profile.info.source.toLowerCase())) &&
         (filters.race.length === 0 || filters.race.includes(profile.info.race.toLowerCase())) &&
@@ -106,7 +104,7 @@ const updateResults = () => {
         (filters.activity.length === 0 || filters.activity.includes(profile.info.activity.toLowerCase())) &&
         (filters.kinks.length === 0 || profile.info.kinks.some(kink => filters.kinks.includes(kink.toLowerCase())))
     );
-    displayResults(filteredData, totalProfiles);
+    displayResults(filteredData);
 };
 
 const getActiveFilters = () => {
@@ -121,12 +119,11 @@ const getActiveFilters = () => {
     return activeFilters;
 };
 
-const displayResults = (profiles, totalProfiles) => {
+const displayResults = (profiles) => {
     elements.resultsContainer.innerHTML = profiles.map(createProfileCard).join('');
-    document.getElementById('resultCount').textContent = `Showing ${profiles.length} of ${totalProfiles} results`;
+    document.getElementById('resultCount').textContent = `Showing ${profiles.length} results`;
     const activeFilters = getActiveFilters();
     document.getElementById('filterInfo').textContent = `Filters applied: ${activeFilters.length} (${activeFilters.join(', ')})`;
-
     elements.resultsContainer.addEventListener('click', handleProfileClick(profiles));
 };
 

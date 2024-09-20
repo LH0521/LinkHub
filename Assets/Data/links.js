@@ -11,7 +11,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -26,7 +27,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -41,7 +43,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -56,7 +59,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "18"
         }
     },
     {
@@ -71,7 +75,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "Hispanic",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -86,7 +91,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "18"
         }
     },
     {
@@ -101,7 +107,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "20"
         }
     },
     {
@@ -116,7 +123,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "19"
         }
     },
     {
@@ -131,7 +139,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "23"
         }
     },
     {
@@ -146,7 +155,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -161,7 +171,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "21"
         }
     },
     {
@@ -176,7 +187,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -191,7 +203,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "19"
         }
     },
     {
@@ -206,7 +219,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     },
     {
@@ -221,7 +235,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "18"
         }
     },
     {
@@ -236,7 +251,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": "20"
         }
     },
     {
@@ -251,7 +267,8 @@ const data = [
             "sexuality": "Gay",
             "body": "Twink",
             "race": "Asian",
-            "source": "Twitter"
+            "source": "Twitter",
+            "age": ""
         }
     }
 
@@ -268,7 +285,8 @@ const data = [
                 "sexuality": "Gay",
                 "body": "Twink",
                 "race": "White",
-                "source": "Twitter"
+                "source": "Twitter",
+                "age": ""
             }
         }
     */

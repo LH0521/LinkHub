@@ -43,7 +43,7 @@ const data = [
             "race": "White",
             "source": "Twitter"
         }
-    }
+    },
     {
         "name": "ExhibBoy",
         "link": "PvblicBoy",
@@ -221,6 +221,21 @@ const data = [
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "nate 🩵🧸",
+        "link": "sfnattee",
+        "icon": "1785515427512414209/a4PghezF.jpg",
+        "info": {
+            "preview": ["F6arSXPa0AAK_yh?format=jpg", "F1gTgafXoAIqOT7?format=jpg"],
+            "kinks": ["Feet", "Watersports"],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "Asian",
             "source": "Twitter"
         }
     }

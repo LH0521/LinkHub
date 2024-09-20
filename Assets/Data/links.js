@@ -60,6 +60,21 @@ const data = [
         }
     },
     {
+        "name": "MasterDax",
+        "link": "MasterDax69",
+        "icon": "1702970385103278080/Sq_rwu8Y.jpg",
+        "info": {
+            "preview": ["Fsgf6DHWwAAij6L?format=jpg", "FrrV28fWcAA6225?format=jpg"],
+            "kinks": ["Feet"],
+            "experience": "Professional",
+            "activity": "Active",
+            "sexuality": "Gay",
+            "body": "Jock",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Manu",
         "link": "manutwinkx",
         "icon": "1620896802294702091/uyBqkGH4.jpg",

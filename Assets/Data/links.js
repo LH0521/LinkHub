@@ -1,13 +1,13 @@
 const data = [
     {
-        "name": "Jacob top",
-        "link": "Jacobdylon_",
-        "icon": "1673088047347384320/S3fuasFL.jpg",
+        "name": "Jacob",
+        "link": "JacobDylan_",
+        "icon": "1672780187652464642/Hd-Xen10.jpg",
         "info": {
-            "preview": ["GTFOqtJWAAAcMBn?format=jpg", "GJRAk7NXcAAz3VL?format=jpg"],
+            "preview": ["GUFz642XcAIcJPO?format=jpg", "F2FxjP5WIAAjSWP?format=jpg"],
             "kinks": [],
             "experience": "Professional",
-            "activity": "Active",
+            "activity": "Semiactive",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",

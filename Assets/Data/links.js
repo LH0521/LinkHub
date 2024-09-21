@@ -13,6 +13,19 @@ const data = [
         }
     },
     {
+        "name": "CollegeTwunk",
+        "link": "TwunkCollege",
+        "icon": "1825049569073233921/9gshPZne.jpg",
+        "info": {
+            "preview": ["GUgiJhGb0AAclEg?format=jpg", "GXA46ReXAAAHb3t?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "Asian",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Blonde Boy Brad",
         "link": "blondeboybrad1",
         "icon": "1808551429889564672/wqHInngt.jpg",

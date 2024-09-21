@@ -109,13 +109,12 @@ elements.searchBar.addEventListener('input', (e) => {
 
 const searchProfiles = (query) => {
     const filteredData = data.filter(profile => {
-        return profile.name.toLowerCase().includes(query) ||
-            profile.info.kinks.some(kink => kink.toLowerCase().includes(query)) &&
+        return profile.name.toLowerCase().includes(query) || profile.info.tags.some(tags => tags.toLowerCase().includes(query)) &&
             Object.entries(filters).every(([category, values]) => {
                 if (values.length === 0) return true;
                 const profileValue = profile.info[category]?.toLowerCase();
-                return category === 'kinks'
-                    ? profile.info.kinks.some(k => values.includes(k.toLowerCase()))
+                return category === 'tags'
+                    ? profile.info.tags.some(k => values.includes(k.toLowerCase()))
                     : values.includes(profileValue);
             });
     });

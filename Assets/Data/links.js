@@ -4,7 +4,6 @@ const data = [
         "link": "JacobDylan_",
         "icon": "1672780187652464642/Hd-Xen10.jpg",
         "info": {
-            "tags": [],
             "preview": ["GUFz642XcAIcJPO?format=jpg", "F2FxjP5WIAAjSWP?format=jpg"],
             "kinks": [],
             "experience": "Professional",
@@ -19,7 +18,6 @@ const data = [
         "link": "blondeboybrad1",
         "icon": "1808551429889564672/wqHInngt.jpg",
         "info": {
-            "tags": [],
             "preview": ["GTL4jQDbMAAweCM?format=jpg", "GSuxY4DXoAAxRwU?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
@@ -34,7 +32,6 @@ const data = [
         "link": "dannydelanox",
         "icon": "1671963209421537281/oNjhsH07.jpg",
         "info": {
-            "tags": [],
             "preview": ["FLq_CZLXoAEwNHM?format=jpg", "FRWKBPiXsAIUF_y?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
@@ -49,7 +46,6 @@ const data = [
         "link": "CharTwinkk",
         "icon": "1759498677964406784/FPeLLQ2I.jpg",
         "info": {
-            "tags": [],
             "preview": ["GXc0etwXAAAdvQd?format=jpg", "GTbd2XpXcAA3VIA?format=jpg"],
             "kinks": [],
             "experience": "Professional",
@@ -64,7 +60,6 @@ const data = [
         "link": "PvblicBoy",
         "icon": "1819821904653365248/LCaWV3wa.jpg",
         "info": {
-            "tags": [],
             "preview": ["GXqWMwUXgAApYY_?format=png", "GPRinQbXUAAOZad?format=png"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
@@ -79,7 +74,6 @@ const data = [
         "link": "Leobf18",
         "icon": "1707741001626824705/WulxJjMy.jpg",
         "info": {
-            "tags": [],
             "preview": ["FspFvNjX0AAo9CH?format=jpg", "FsT-5DGacAIv84T?format=jpg"],
             "kinks": [],
             "experience": "Professional",
@@ -94,7 +88,6 @@ const data = [
         "link": "MasterDax69",
         "icon": "1702970385103278080/Sq_rwu8Y.jpg",
         "info": {
-            "tags": [],
             "preview": ["Fsgf6DHWwAAij6L?format=jpg", "FrrV28fWcAA6225?format=jpg"],
             "kinks": ["Feet"],
             "experience": "Professional",
@@ -109,7 +102,6 @@ const data = [
         "link": "manutwinkx",
         "icon": "1620896802294702091/uyBqkGH4.jpg",
         "info": {
-            "tags": [],
             "preview": ["F-bA0dDaUAAdzJ9?format=jpg", "Fq8uZ3vXoAAjjNm?format=jpg"],
             "kinks": [],
             "experience": "Professional",
@@ -124,7 +116,6 @@ const data = [
         "link": "seattle_boi",
         "icon": "1829151408865579008/vpXDRJ1q.jpg",
         "info": {
-            "tags": [],
             "preview": ["GUMdj6FXcAA0FWD?format=jpg", "GXFA6WGWYAArT38?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
@@ -139,7 +130,6 @@ const data = [
         "link": "german1gay",
         "icon": "1809948150116786177/K3fFUp7z.jpg",
         "info": {
-            "tags": [],
             "preview": ["GU4FAuyXoAMPVc7?format=jpg", "GXvK9twXwAAX8aY?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
@@ -154,7 +144,6 @@ const data = [
         "link": "foxwaterr",
         "icon": "1576809288529580034/96KlR-hc.jpg",
         "info": {
-            "tags": [],
             "preview": ["F0d_sxdWYAA0qLQ?format=jpg", "Fxt1fO1WYAA3WHn?format=jpg"],
             "kinks": ["Furry"],
             "experience": "Amateur",
@@ -169,7 +158,6 @@ const data = [
         "link": "pianotwink",
         "icon": "1823779465895272448/hLSjMIzw.jpg",
         "info": {
-            "tags": [],
             "preview": ["GT58WnrW4AA7EDF?format=jpg", "GTgZ2HwWoAAIGgO?format=jpg"],
             "kinks": ["Pups"],
             "experience": "Professional",
@@ -184,7 +172,6 @@ const data = [
         "link": "LeonMxgear",
         "icon": "1772707047076716544/u0EXiVuB.jpg",
         "info": {
-            "tags": [],
             "preview": ["GQR8qlSXAAAnyh0?format=jpg", "FZrSVcpWIAUBOL-?format=jpg"],
             "kinks": ["Pups", "Latex", "MXGear"],
             "experience": "Professional",
@@ -199,7 +186,6 @@ const data = [
         "link": "hornypupxxx",
         "icon": "1698424464772366336/x5BPCNIk.jpg",
         "info": {
-            "tags": [],
             "preview": ["GWnreOeXAAA4a3r?format=jpg", "GVk9tBgXkAA1MEX?format=jpg"],
             "kinks": ["Pups"],
             "experience": "Professional",
@@ -214,7 +200,6 @@ const data = [
         "link": "jmelo699",
         "icon": "1833250252654026752/yDZhlDdC.jpg",
         "info": {
-            "tags": [],
             "preview": ["GTxIqw5WoAAHJJS?format=jpg", "GWbsSJqXwAAM7VI?format=jpg"],
             "kinks": [],
             "experience": "Professional",
@@ -229,7 +214,6 @@ const data = [
         "link": "alphajess3",
         "icon": "1447475498825682948/yIk1Ji7h.jpg",
         "info": {
-            "tags": [],
             "preview": ["FYiEgWeWQAE3GwR?format=jpg", "FUwAp86WIAAc4eS?format=jpg"],
             "kinks": ["Feet"],
             "experience": "Professional",
@@ -244,7 +228,6 @@ const data = [
         "link": "sfnattee",
         "icon": "1785515427512414209/a4PghezF.jpg",
         "info": {
-            "tags": [],
             "preview": ["F6arSXPa0AAK_yh?format=jpg", "F1gTgafXoAIqOT7?format=jpg"],
             "kinks": ["Feet", "Watersports"],
             "experience": "Professional",
@@ -261,7 +244,6 @@ const data = [
             "link": "",
             "icon": "",
             "info": {
-                "tags": [],
                 "preview": ["", ""],
                 "kinks": [],
                 "experience": "Professional",

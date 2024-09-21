@@ -26,6 +26,32 @@ const data = [
         }
     },
     {
+        "name": "Lucas",
+        "link": "UcasOfl",
+        "icon": "1564069043199418370/Hck81AgW.jpg",
+        "info": {
+            "preview": ["GKM0ZgJXkAE3x0h?format=jpg", "GV_C5MmWEAAzYCX?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Jhonbaby💋",
+        "link": "Jhoncruz8289",
+        "icon": "1782972299395620864/4ELP0D7h.jpg",
+        "info": {
+            "preview": ["GWQj5omW8AArtCv?format=jpg", "GUMNkjDWsAAEXst?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "Hispanic",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Blonde Boy Brad",
         "link": "blondeboybrad1",
         "icon": "1808551429889564672/wqHInngt.jpg",
@@ -123,6 +149,19 @@ const data = [
         "info": {
             "preview": ["GUMdj6FXcAA0FWD?format=jpg", "GXFA6WGWYAArT38?format=jpg"],
             "kinks": ["Exhibition"],
+            "sexuality": "Gay",
+            "body": "Jock",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "KING JESS",
+        "link": "alphajess3",
+        "icon": "1447475498825682948/yIk1Ji7h.jpg",
+        "info": {
+            "preview": ["FYiEgWeWQAE3GwR?format=jpg", "FUwAp86WIAAc4eS?format=jpg"],
+            "kinks": ["Feet"],
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
@@ -234,14 +273,27 @@ const data = [
         }
     },
     {
-        "name": "KING JESS",
-        "link": "alphajess3",
-        "icon": "1447475498825682948/yIk1Ji7h.jpg",
+        "name": "Pup Xander",
+        "link": "PupperXander",
+        "icon": "1775250222639198208/n3CsdJDB.jpg",
         "info": {
-            "preview": ["FYiEgWeWQAE3GwR?format=jpg", "FUwAp86WIAAc4eS?format=jpg"],
-            "kinks": ["Feet"],
+            "preview": ["GU9I3KdXAAAhLqW?format=jpg", "GVM5RIMW0AAOJIh?format=jpg"],
+            "kinks": ["Pups", "Latex"],
             "sexuality": "Gay",
-            "body": "Jock",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Pumpkin",
+        "link": "Pup_Pumpkin_",
+        "icon": "1806585944281153536/7YXXjiWX.jpg",
+        "info": {
+            "preview": ["GWjYCXiXsAA1v0Y?format=jpg", "FmtJybSWIAA7J7u?format=jpg"],
+            "kinks": ["Pups"],
+            "sexuality": "Gay",
+            "body": "Twink",
             "race": "White",
             "source": "Twitter"
         }

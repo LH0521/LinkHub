@@ -301,7 +301,8 @@
                                         <i class="ph ph-person-simple-bike text-lg me-3"></i>
                                         <span class="text-body text-sm font-semibold">MXGear</span>
                                         <div class="ms-auto text-end">
-                                            <input class="form-check-input" type="checkbox" id="filter-mxgear" value="mxgear">
+                                            <input class="form-check-input" type="checkbox" id="filter-mxgear"
+                                                value="mxgear">
                                         </div>
                                     </span>
                                 </label>
@@ -424,8 +425,7 @@
                                         <i class="ph ph-number-square-one text-lg me-3"></i>
                                         <span class="text-body text-sm font-semibold">Gay</span>
                                         <div class="ms-auto text-end">
-                                            <input class="form-check-input" type="checkbox" id="filter-gay"
-                                                value="gay">
+                                            <input class="form-check-input" type="checkbox" id="filter-gay" value="gay">
                                         </div>
                                     </span>
                                 </label>
@@ -607,10 +607,20 @@
 
                             <div class="card">
                                 <div class="card-body pb-5">
-                                    <span class="d-block h6 text-heading mb-0">Results</span>
-                                    <span class="d-block text-sm text-muted" id="resultCount"></span>
-                                    <span class="d-block h6 text-heading mb-0">Filters</span>
-                                    <span class="d-block text-sm text-muted" id="filterInfo"></span>
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon icon-shape rounded-3 text-lg bg-danger text-white me-3"><i class="bi bi-card-image"></i></div>
+                                        <div class="flex-1">
+                                            <span class="d-block font-semibold text-sm text-heading">Results</span>
+                                            <div class="text-xs text-muted" id="resultCount"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon icon-shape rounded-3 text-lg bg-dark text-white me-3"><i class="bi bi-filter-square"></i></div>
+                                        <div class="flex-1">
+                                            <span class="d-block font-semibold text-sm text-heading">Filters</span>
+                                            <div class="text-xs text-muted" id="filterInfo"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

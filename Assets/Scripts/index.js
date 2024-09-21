@@ -129,10 +129,11 @@ const updateResults = () => {
     const filteredData = data.filter(profile => {
         return Object.entries(filters).every(([category, values]) => {
             if (values.length === 0) return true;
-            const profileValue = profile.info[category]?.toLowerCase();
-            return category === 'kinks'
-                ? profile.info.kinks.some(k => values.includes(k.toLowerCase()))
-                : values.includes(profileValue);
+            const profileValue = profile.info[category];
+            if (category === 'kinks') {
+                return profileValue.some(kink => values.includes(kink.toLowerCase()));
+            }
+            return typeof profileValue === 'string' && values.includes(profileValue.toLowerCase());
         });
     });
     displayResults(filteredData);

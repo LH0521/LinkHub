@@ -26,7 +26,7 @@ const filterConfig = {
     experience: ['professional', 'amateur'],
     sexuality: ['straight', 'gay', 'lesbian'],
     activity: ['active', 'semiactive', 'inactive'],
-    kinks: ['exhibition', 'feet', 'bondage', 'latex', 'furry', 'pups']
+    kinks: ['exhibition', 'feet', 'bondage', 'ageplay', 'latex', 'furry', 'pups', 'CBT', 'mxgear', 'trampling', 'femboy', 'character', 'watersports']
 };
 
 let filters = {

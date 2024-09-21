@@ -234,3 +234,5 @@ const showOffCanvas = (id) => {
     const offcanvasElement = new bootstrap.Offcanvas(document.getElementById(id));
     offcanvasElement.show();
 };
+
+displayResults(data);

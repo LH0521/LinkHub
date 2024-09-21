@@ -22,7 +22,7 @@ const elements = {
 const filterConfig = {
     source: ['twitter', 'reddit'],
     race: ['white', 'black', 'hispanic', 'asian'],
-    body: ['twink', 'twunk', 'jock'],
+    body: ['twink', 'twunk', 'stocky jock', 'jock'],
     sexuality: ['straight', 'gay', 'lesbian'],
     kinks: ['exhibition', 'feet', 'bondage', 'ageplay', 'latex', 'furry', 'pups', 'CBT', 'mxgear', 'trampling', 'femboy', 'character', 'watersports']
 };

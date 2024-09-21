@@ -130,6 +130,32 @@ const data = [
         }
     },
     {
+        "name": "Zayden",
+        "link": "zaydennash",
+        "icon": "1704696823175172096/FWcy49rR.jpg",
+        "info": {
+            "preview": ["FwQwGVIWwAU6kET?format=jpg", "GJNN6u8WAAAeT1f?format=jpg"],
+            "kinks": ["Pups", "MXGear"],
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Karsen Nash",
+        "link": "Karsennash",
+        "icon": "1701446692719984640/OI0NTBLZ.jpg",
+        "info": {
+            "preview": ["GMXXRcZWAAAT8uW?format=jpg", "GL2Oy8kWYAA0nx_?format=jpg"],
+            "kinks": ["Pups"],
+            "sexuality": "Gay",
+            "body": "Stocky Jock",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Dirty Fox Paws",
         "link": "foxwaterr",
         "icon": "1576809288529580034/96KlR-hc.jpg",
@@ -143,14 +169,14 @@ const data = [
         }
     },
     {
-        "name": "Pup Maestro",
-        "link": "pianotwink",
-        "icon": "1823779465895272448/hLSjMIzw.jpg",
+        "name": "🏈 Zac & Austin 🏒",
+        "link": "goodgamebro_xxx",
+        "icon": "1765184605534179329/mDvscL1E.jpg",
         "info": {
-            "preview": ["GT58WnrW4AA7EDF?format=jpg", "GTgZ2HwWoAAIGgO?format=jpg"],
-            "kinks": ["Pups"],
+            "preview": ["GVl0loNXIAAbSQl?format=jpg", "GVdpRURagAAfWl-?format=jpg"],
+            "kinks": ["Pups", "MXGear"],
             "sexuality": "Gay",
-            "body": "Twink",
+            "body": "Jock",
             "race": "White",
             "source": "Twitter"
         }
@@ -208,6 +234,32 @@ const data = [
         }
     },
     {
+        "name": "Pup Maestro",
+        "link": "pianotwink",
+        "icon": "1823779465895272448/hLSjMIzw.jpg",
+        "info": {
+            "preview": ["GT58WnrW4AA7EDF?format=jpg", "GTgZ2HwWoAAIGgO?format=jpg"],
+            "kinks": ["Pups"],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "SOAP HYENA🧼",
+        "link": "MxSoap46",
+        "icon": "1798892805118693376/_7PuKfDs.jpg",
+        "info": {
+            "preview": ["GLr5enRXEAAFrqy?format=jpg", "GIbAOkSWEAAu2aO?format=jpg"],
+            "kinks": ["Pups", "MXGear"],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "nate 🩵🧸",
         "link": "sfnattee",
         "icon": "1785515427512414209/a4PghezF.jpg",
@@ -229,7 +281,6 @@ const data = [
             "info": {
                 "preview": ["", ""],
                 "kinks": [],
-                "experience": "Professional",
                 "sexuality": "Gay",
                 "body": "Twink",
                 "race": "White",

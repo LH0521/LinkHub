@@ -110,6 +110,7 @@ elements.searchBar.addEventListener('input', (e) => {
 const searchProfiles = (query) => {
     const filteredData = data.filter(profile => {
         return profile.name.toLowerCase().includes(query) ||
+                profile.link.toLowerCase().includes(query) ||
                 profile.info.experience.toLowerCase().includes(query) ||
                 profile.info.sexuality.toLowerCase().includes(query) ||
                 profile.info.body.toLowerCase().includes(query) ||

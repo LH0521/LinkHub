@@ -91,15 +91,15 @@ const data = [
         }
     },
     {
-        "name": "ExhibBoy",
-        "link": "PvblicBoy",
-        "icon": "1819821904653365248/LCaWV3wa.jpg",
+        "name": "Twinkyboy",
+        "link": "twinkyboy05",
+        "icon": "1789792728403824640/qzLKj54D.jpg",
         "info": {
-            "preview": ["GXqWMwUXgAApYY_?format=png", "GPRinQbXUAAOZad?format=png"],
-            "kinks": ["Exhibition"],
+            "preview": ["GWUkWJnbQAILX9-?format=jpg", "GWzmT1wWMAMJLXT?format=jpg"],
+            "kinks": [],
             "sexuality": "Gay",
             "body": "Twink",
-            "race": "Hispanic",
+            "race": "White",
             "source": "Twitter"
         }
     },
@@ -112,6 +112,58 @@ const data = [
             "kinks": [],
             "sexuality": "Gay",
             "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Noah😼",
+        "link": "XxNoahKhan",
+        "icon": "1751963913585840128/WjK5DKMh.jpg",
+        "info": {
+            "preview": ["GGF7xfHXsAA4KOO?format=jpg", "GNB72Q5XgAA5_bZ?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Alejandro Twink",
+        "link": "alejandrotwinkx",
+        "icon": "1803624133340647424/H_So1k70.jpg",
+        "info": {
+            "preview": ["GCYTD8nWkAAJQBJ?format=jpg", "GKq2lBNXgAAzVgo?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "Hispanic",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Hayden Hill",
+        "link": "haydenhillx",
+        "icon": "1787610398172008448/IKzlTcDV.jpg",
+        "info": {
+            "preview": ["Fqfu0_pX0AY8JqI?format=jpg", "FxZyNuCXsAAj_l7?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Christopher",
+        "link": "ChrisWTheStar",
+        "icon": "1767300598758612994/mOFXUUZv.jpg",
+        "info": {
+            "preview": ["GXYsGNIXUAArKYv?format=jpg", "GJyTFg5XQAA11Fu?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twunk",
             "race": "White",
             "source": "Twitter"
         }
@@ -165,6 +217,32 @@ const data = [
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Playboy JJ 🗡️",
+        "link": "Plaqueboyjj",
+        "icon": "1747066067975819265/WYA2wmai.jpg",
+        "info": {
+            "preview": ["GPKJWqsWUAAVpsv?format=jpg", "GS4tAhFXYAIeHQo?format=jpg"],
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "ExhibBoy",
+        "link": "PvblicBoy",
+        "icon": "1819821904653365248/LCaWV3wa.jpg",
+        "info": {
+            "preview": ["GXqWMwUXgAApYY_?format=png", "GPRinQbXUAAOZad?format=png"],
+            "kinks": ["Exhibition"],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "Hispanic",
             "source": "Twitter"
         }
     },

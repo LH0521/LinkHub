@@ -6,7 +6,6 @@ const data = [
         "info": {
             "preview": ["GUFz642XcAIcJPO?format=jpg", "F2FxjP5WIAAjSWP?format=jpg"],
             "kinks": [],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
@@ -20,7 +19,6 @@ const data = [
         "info": {
             "preview": ["GTL4jQDbMAAweCM?format=jpg", "GSuxY4DXoAAxRwU?format=jpg"],
             "kinks": ["Exhibition"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
@@ -34,7 +32,6 @@ const data = [
         "info": {
             "preview": ["FLq_CZLXoAEwNHM?format=jpg", "FRWKBPiXsAIUF_y?format=jpg"],
             "kinks": ["Exhibition"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -48,7 +45,6 @@ const data = [
         "info": {
             "preview": ["GXc0etwXAAAdvQd?format=jpg", "GTbd2XpXcAA3VIA?format=jpg"],
             "kinks": [],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -62,7 +58,6 @@ const data = [
         "info": {
             "preview": ["GXqWMwUXgAApYY_?format=png", "GPRinQbXUAAOZad?format=png"],
             "kinks": ["Exhibition"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "Hispanic",
@@ -76,7 +71,6 @@ const data = [
         "info": {
             "preview": ["FspFvNjX0AAo9CH?format=jpg", "FsT-5DGacAIv84T?format=jpg"],
             "kinks": [],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -90,7 +84,6 @@ const data = [
         "info": {
             "preview": ["Fsgf6DHWwAAij6L?format=jpg", "FrrV28fWcAA6225?format=jpg"],
             "kinks": ["Feet"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
@@ -104,7 +97,6 @@ const data = [
         "info": {
             "preview": ["F-bA0dDaUAAdzJ9?format=jpg", "Fq8uZ3vXoAAjjNm?format=jpg"],
             "kinks": [],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
@@ -118,7 +110,6 @@ const data = [
         "info": {
             "preview": ["GUMdj6FXcAA0FWD?format=jpg", "GXFA6WGWYAArT38?format=jpg"],
             "kinks": ["Exhibition"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
@@ -132,7 +123,6 @@ const data = [
         "info": {
             "preview": ["GU4FAuyXoAMPVc7?format=jpg", "GXvK9twXwAAX8aY?format=jpg"],
             "kinks": ["Exhibition"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -146,7 +136,6 @@ const data = [
         "info": {
             "preview": ["F0d_sxdWYAA0qLQ?format=jpg", "Fxt1fO1WYAA3WHn?format=jpg"],
             "kinks": ["Furry"],
-            "experience": "Amateur",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
@@ -160,7 +149,6 @@ const data = [
         "info": {
             "preview": ["GT58WnrW4AA7EDF?format=jpg", "GTgZ2HwWoAAIGgO?format=jpg"],
             "kinks": ["Pups"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -174,7 +162,6 @@ const data = [
         "info": {
             "preview": ["GQR8qlSXAAAnyh0?format=jpg", "FZrSVcpWIAUBOL-?format=jpg"],
             "kinks": ["Pups", "Latex", "MXGear"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -188,7 +175,6 @@ const data = [
         "info": {
             "preview": ["GWnreOeXAAA4a3r?format=jpg", "GVk9tBgXkAA1MEX?format=jpg"],
             "kinks": ["Pups"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
@@ -202,7 +188,6 @@ const data = [
         "info": {
             "preview": ["GTxIqw5WoAAHJJS?format=jpg", "GWbsSJqXwAAM7VI?format=jpg"],
             "kinks": [],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
@@ -216,7 +201,6 @@ const data = [
         "info": {
             "preview": ["FYiEgWeWQAE3GwR?format=jpg", "FUwAp86WIAAc4eS?format=jpg"],
             "kinks": ["Feet"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
@@ -230,7 +214,6 @@ const data = [
         "info": {
             "preview": ["F6arSXPa0AAK_yh?format=jpg", "F1gTgafXoAIqOT7?format=jpg"],
             "kinks": ["Feet", "Watersports"],
-            "experience": "Professional",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "Asian",

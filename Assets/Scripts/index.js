@@ -25,7 +25,6 @@ const filterConfig = {
     body: ['twink', 'twunk', 'jock'],
     experience: ['professional', 'amateur'],
     sexuality: ['straight', 'gay', 'lesbian'],
-    activity: ['active', 'semiactive', 'inactive'],
     kinks: ['exhibition', 'feet', 'bondage', 'ageplay', 'latex', 'furry', 'pups', 'CBT', 'mxgear', 'trampling', 'femboy', 'character', 'watersports']
 };
 
@@ -35,7 +34,6 @@ let filters = {
     body: [],
     experience: [],
     sexuality: [],
-    activity: [],
     kinks: []
 };
 
@@ -99,7 +97,6 @@ const resetFilters = () => {
         body: [],
         experience: [],
         sexuality: [],
-        activity: [],
         kinks: []
     };
     document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => checkbox.checked = false);

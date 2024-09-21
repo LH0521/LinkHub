@@ -7,12 +7,10 @@ const data = [
             "preview": ["GUFz642XcAIcJPO?format=jpg", "F2FxjP5WIAAjSWP?format=jpg"],
             "kinks": [],
             "experience": "Professional",
-            "activity": "Semiactive",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -23,12 +21,10 @@ const data = [
             "preview": ["GTL4jQDbMAAweCM?format=jpg", "GSuxY4DXoAAxRwU?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -39,12 +35,10 @@ const data = [
             "preview": ["FLq_CZLXoAEwNHM?format=jpg", "FRWKBPiXsAIUF_y?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -55,12 +49,10 @@ const data = [
             "preview": ["GXc0etwXAAAdvQd?format=jpg", "GTbd2XpXcAA3VIA?format=jpg"],
             "kinks": [],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": "18"
+            "source": "Twitter"
         }
     },
     {
@@ -71,12 +63,10 @@ const data = [
             "preview": ["GXqWMwUXgAApYY_?format=png", "GPRinQbXUAAOZad?format=png"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "Hispanic",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -87,12 +77,10 @@ const data = [
             "preview": ["FspFvNjX0AAo9CH?format=jpg", "FsT-5DGacAIv84T?format=jpg"],
             "kinks": [],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": "18"
+            "source": "Twitter"
         }
     },
     {
@@ -103,12 +91,10 @@ const data = [
             "preview": ["Fsgf6DHWwAAij6L?format=jpg", "FrrV28fWcAA6225?format=jpg"],
             "kinks": ["Feet"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
-            "source": "Twitter",
-            "age": "20"
+            "source": "Twitter"
         }
     },
     {
@@ -119,12 +105,10 @@ const data = [
             "preview": ["F-bA0dDaUAAdzJ9?format=jpg", "Fq8uZ3vXoAAjjNm?format=jpg"],
             "kinks": [],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter",
-            "age": "19"
+            "source": "Twitter"
         }
     },
     {
@@ -135,12 +119,10 @@ const data = [
             "preview": ["GUMdj6FXcAA0FWD?format=jpg", "GXFA6WGWYAArT38?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
-            "source": "Twitter",
-            "age": "23"
+            "source": "Twitter"
         }
     },
     {
@@ -151,12 +133,10 @@ const data = [
             "preview": ["GU4FAuyXoAMPVc7?format=jpg", "GXvK9twXwAAX8aY?format=jpg"],
             "kinks": ["Exhibition"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -167,12 +147,10 @@ const data = [
             "preview": ["F0d_sxdWYAA0qLQ?format=jpg", "Fxt1fO1WYAA3WHn?format=jpg"],
             "kinks": ["Furry"],
             "experience": "Amateur",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter",
-            "age": "21"
+            "source": "Twitter"
         }
     },
     {
@@ -183,12 +161,10 @@ const data = [
             "preview": ["GT58WnrW4AA7EDF?format=jpg", "GTgZ2HwWoAAIGgO?format=jpg"],
             "kinks": ["Pups"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -199,12 +175,10 @@ const data = [
             "preview": ["GQR8qlSXAAAnyh0?format=jpg", "FZrSVcpWIAUBOL-?format=jpg"],
             "kinks": ["Pups", "Latex", "MXGear"],
             "experience": "Professional",
-            "activity": "Semiactive",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": "19"
+            "source": "Twitter"
         }
     },
     {
@@ -215,12 +189,10 @@ const data = [
             "preview": ["GWnreOeXAAA4a3r?format=jpg", "GVk9tBgXkAA1MEX?format=jpg"],
             "kinks": ["Pups"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twunk",
             "race": "White",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     },
     {
@@ -231,12 +203,10 @@ const data = [
             "preview": ["GTxIqw5WoAAHJJS?format=jpg", "GWbsSJqXwAAM7VI?format=jpg"],
             "kinks": [],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "White",
-            "source": "Twitter",
-            "age": "18"
+            "source": "Twitter"
         }
     },
     {
@@ -247,12 +217,10 @@ const data = [
             "preview": ["FYiEgWeWQAE3GwR?format=jpg", "FUwAp86WIAAc4eS?format=jpg"],
             "kinks": ["Feet"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Jock",
             "race": "White",
-            "source": "Twitter",
-            "age": "20"
+            "source": "Twitter"
         }
     },
     {
@@ -263,12 +231,10 @@ const data = [
             "preview": ["F6arSXPa0AAK_yh?format=jpg", "F1gTgafXoAIqOT7?format=jpg"],
             "kinks": ["Feet", "Watersports"],
             "experience": "Professional",
-            "activity": "Active",
             "sexuality": "Gay",
             "body": "Twink",
             "race": "Asian",
-            "source": "Twitter",
-            "age": ""
+            "source": "Twitter"
         }
     }
 
@@ -281,12 +247,10 @@ const data = [
                 "preview": ["", ""],
                 "kinks": [],
                 "experience": "Professional",
-                "activity": "Active",
                 "sexuality": "Gay",
                 "body": "Twink",
                 "race": "White",
-                "source": "Twitter",
-                "age": ""
+                "source": "Twitter"
             }
         }
     */

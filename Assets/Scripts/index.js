@@ -16,7 +16,6 @@ const elements = {
     searchBar: document.getElementById('searchBar'),
     clearFiltersButton: document.getElementById('clearFiltersButton'),
     resultsContainer: document.querySelector('.row.g-3.g-xl-5.mt-1'),
-    previewContainer: document.getElementById('profileDetailPreview'),
 };
 
 const filterConfig = {
@@ -107,12 +106,12 @@ elements.searchBar.addEventListener('input', (e) => {
 const searchProfiles = (query) => {
     const filteredData = data.filter(profile => {
         return profile.name.toLowerCase().includes(query) ||
-                profile.link.toLowerCase().includes(query) ||
-                profile.info.sexuality.toLowerCase().includes(query) ||
-                profile.info.body.toLowerCase().includes(query) ||
-                profile.info.race.toLowerCase().includes(query) ||
-                profile.info.source.toLowerCase().includes(query) ||
-                profile.info.kinks.some(kink => kink.toLowerCase().includes(query)) &&
+            profile.link.toLowerCase().includes(query) ||
+            profile.info.sexuality.toLowerCase().includes(query) ||
+            profile.info.body.toLowerCase().includes(query) ||
+            profile.info.race.toLowerCase().includes(query) ||
+            profile.info.source.toLowerCase().includes(query) ||
+            profile.info.kinks.some(kink => kink.toLowerCase().includes(query)) &&
             Object.entries(filters).every(([category, values]) => {
                 if (values.length === 0) return true;
                 const profileValue = profile.info[category]?.toLowerCase();
@@ -189,11 +188,10 @@ const createProfileCard = (profile) => {
 };
 
 const populateLinkDetails = ({ name, link, icon, info }) => {
-    const { sexuality, body, race, kinks, preview, source } = info;
+    const { sexuality, body, race, kinks, source } = info;
     const profileIcon = getProfileIcon(source, icon);
     const profileUrl = getProfileUrl(source, link);
     const profileLinkDisplay = formatProfileLink(source, link);
-
     updateElementContent('profileDetailPic', 'src', profileIcon);
     updateElementContent('profileDetailName', 'textContent', name);
     updateElementContent('profileDetailLink', 'textContent', profileLinkDisplay);
@@ -202,32 +200,15 @@ const populateLinkDetails = ({ name, link, icon, info }) => {
     updateElementContent('profileDetailBody', 'textContent', body);
     updateElementContent('profileDetailRace', 'textContent', race);
     updateElementContent('profileDetailKinks', 'textContent', kinks.join(", "));
-
-    elements.previewContainer.innerHTML = '';
-
-    preview.forEach(imgUrl => {
-        const fullImgUrl = getPreviewUrl(source, imgUrl);
-        elements.previewContainer.appendChild(createImageElement(fullImgUrl));
-    });
-
     showOffCanvas('link_canvas');
 };
 
 const getProfileIcon = (source, icon) => source === "Twitter" ? `https://pbs.twimg.com/profile_images/${icon}` : `https://preview.redd.it/${icon}`;
 const getProfileUrl = (source, link) => source === "Twitter" ? `https://x.com/${link}` : `https://www.reddit.com/user/${link}`;
 const formatProfileLink = (source, link) => source === "Twitter" ? `@${link}` : `u/${link}`;
-const getPreviewUrl = (source, imgUrl) => source === "Twitter" ? `https://pbs.twimg.com/media/${imgUrl}` : `https://preview.redd.it/${imgUrl}`;
 
 const updateElementContent = (id, property, value) => {
     document.getElementById(id)[property] = value;
-};
-
-const createImageElement = (src) => {
-    const imgElement = document.createElement('img');
-    imgElement.src = src;
-    imgElement.classList.add('rounded', 'w-auto', 'h-24');
-    imgElement.loading = "lazy";
-    return imgElement;
 };
 
 const showOffCanvas = (id) => {

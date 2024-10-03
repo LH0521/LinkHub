@@ -372,6 +372,18 @@ const data = [
         }
     },
     {
+        "name": "Ringer",
+        "link": "RingerShep",
+        "icon": "1577545094512664576/wZ7m7oOm.jpg",
+        "info": {
+            "kinks": ["Furry"],
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Pup Maestro",
         "link": "pianotwink",
         "icon": "1823779465895272448/hLSjMIzw.jpg",

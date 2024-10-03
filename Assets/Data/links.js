@@ -1,20 +1,8 @@
 const data = [
     {
-        "name": "Jacob",
-        "link": "JacobDylan_",
-        "icon": "1672780187652464642/Hd-Xen10.jpg",
-        "info": {
-            "kinks": [],
-            "sexuality": "Gay",
-            "body": "Twunk",
-            "race": "White",
-            "source": "Twitter"
-        }
-    },
-    {
         "name": "CollegeTwunk",
         "link": "TwunkCollege",
-        "icon": "1825049569073233921/9gshPZne.jpg",
+        "icon": "1838077425223077888/OWktIY9g.jpg",
         "info": {
             "kinks": [],
             "sexuality": "Gay",
@@ -31,6 +19,18 @@ const data = [
             "kinks": [],
             "sexuality": "Gay",
             "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Adam ✨",
+        "link": "frenchie_blonde",
+        "icon": "1760021928700502016/txKYzrfb.jpg",
+        "info": {
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Twunk",
             "race": "White",
             "source": "Twitter"
         }
@@ -206,7 +206,7 @@ const data = [
     {
         "name": "KING JESS",
         "link": "alphajess3",
-        "icon": "1447475498825682948/yIk1Ji7h.jpg",
+        "icon": "1840599279460626432/MyJLJfsI.jpg",
         "info": {
             "kinks": ["Feet"],
             "sexuality": "Gay",
@@ -343,18 +343,6 @@ const data = [
             "kinks": ["Pups"],
             "sexuality": "Gay",
             "body": "Twunk",
-            "race": "White",
-            "source": "Twitter"
-        }
-    },
-    {
-        "name": "melo",
-        "link": "jmelo699",
-        "icon": "1833250252654026752/yDZhlDdC.jpg",
-        "info": {
-            "kinks": [],
-            "sexuality": "Gay",
-            "body": "Twink",
             "race": "White",
             "source": "Twitter"
         }

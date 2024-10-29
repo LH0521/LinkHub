@@ -2,7 +2,7 @@ const data = [
     {
         "name": "CollegeTwunk",
         "link": "TwunkCollege",
-        "icon": "1838077425223077888/OWktIY9g.jpg",
+        "icon": "1847713930883330048/6tT6ZsUD.jpg",
         "info": {
             "kinks": [],
             "sexuality": "Gay",
@@ -19,6 +19,18 @@ const data = [
             "kinks": [],
             "sexuality": "Gay",
             "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
+        "name": "Derek Shaw",
+        "link": "realDerekShaw",
+        "icon": "1808203031856701440/P7hSuMJG.jpg",
+        "info": {
+            "kinks": [],
+            "sexuality": "Gay",
+            "body": "Jock",
             "race": "White",
             "source": "Twitter"
         }
@@ -218,7 +230,7 @@ const data = [
     {
         "name": "Playboy JJ 🗡️",
         "link": "Plaqueboyjj",
-        "icon": "1747066067975819265/WYA2wmai.jpg",
+        "icon": "1839559946309955584/EoWsFT0c.jpg",
         "info": {
             "kinks": [],
             "sexuality": "Gay",
@@ -384,6 +396,18 @@ const data = [
         }
     },
     {
+        "name": "Milo :3",
+        "link": "Milo_is_horny",
+        "icon": "1810648025628553216/bdLwAHH2.jpg",
+        "info": {
+            "kinks": ["Furry", "Femboy"],
+            "sexuality": "Gay",
+            "body": "Twink",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Pup Maestro",
         "link": "pianotwink",
         "icon": "1823779465895272448/hLSjMIzw.jpg",
@@ -398,7 +422,7 @@ const data = [
     {
         "name": "SOAP HYENA🧼",
         "link": "MxSoap46",
-        "icon": "1798892805118693376/_7PuKfDs.jpg",
+        "icon": "1850104035334066176/5XgLZjfw.jpg",
         "info": {
             "kinks": ["Pups", "MXGear"],
             "sexuality": "Gay",

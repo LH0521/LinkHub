@@ -384,6 +384,18 @@ const data = [
         }
     },
     {
+        "name": "Palace",
+        "link": "PalaceWolf_",
+        "icon": "1725610027334119424/pJ7PYGKG.jpg",
+        "info": {
+            "kinks": ["Furry"],
+            "sexuality": "Gay",
+            "body": "Twunk",
+            "race": "White",
+            "source": "Twitter"
+        }
+    },
+    {
         "name": "Ringer",
         "link": "RingerShep",
         "icon": "1577545094512664576/wZ7m7oOm.jpg",
